@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200;8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Yoan<span>Pelalana</span>
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#hobby">HOBBY</a></li>
+            <li><a href="#social">SOCIAL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input')
+            const nav= document.querySelector('nav ul')
+    
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('slide');
+            });
+        </script>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Halo</h1>
+            <p>Selamat datang di blog saya, sudah jelas, Yoan! Blog ini berisi informasi tentang Yoan, hobby-hobbynya tentang apapun, serta akun social medianya.</p>
+        </main>
+    </section>
+
+    <section id="about" class="about">
+        <h1>ABOUT</h1>
+    <div class="container">
+        <h2>YOAN PELALANA</h2>
+        <p>Halo, saya Muhammad Yoan Pelalana. Seorang Mahasiswa UNPAS dari prodi Teknik Informatika. Sedang sibuk menikmati hidup dengan cara menjalaninya. Biasa diucapkan selamat pada tanggal 13 September.</p>
+    </div>
+    <div class="wow">
+        <div class="about-img">
+            <img src="img/PP.jpg" alt="About Yoan">
+        </div>
+    </div>
+    <div class="content">
+        <p>Saya mengambil jurusan Film di Universitas Multimedia Nusantara dan lulus tepat waktu pada tahun 2019. Terdengar tidak penting, tapi setidaknya saya bisa memulai obrolan dengan, “…sebagai anak film,”Memulai karir lewat blog pada tahun 2011, saya tanpa sadar cukup konsisten sampai bisa naik tingkat; menulis buku. Seiring dengan perkembangan, saya juga membuat video di YouTube, serta sempat bermain di beberapa film Indonesia. Nah, jadi sebagai anak film… asdfghjkl*#$^*</p>
+    </div>
+    </section>
+
+    <section id="hobby" class="hobby">
+        <h1>HOBBY</h1>
+    </section>
+
+    <section class="service">
+        <div class="services">
+            <div class="icon">⚽</div>
+            <h3>Football</h3>
+            <img src="img/fut.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos porro consequuntur ratione asperiores quidem.</p>
+        </div>
+        <div class="services">
+            <div class="icon">🏃🏻</div>
+            <h3>Jogging</h3>
+            <img src="img/jog.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos porro consequuntur ratione asperiores quidem.</p>
+        </div>
+        <div class="services">
+            <div class="icon">🎮</div>
+            <h3>Gaming</h3>
+            <img src="img/game.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos porro consequuntur ratione asperiores quidem.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="social" class="social">
+        <h1>SOCIAL</h1>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>CONTACT ME</h1>
+        <form action="">
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="nama">
+            </div>
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="email">
+            </div>
+            <div class="input-group">
+                <i data-feather="pesan"></i>
+                <input type="text" placeholder="pesan">
+            </div>
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#hobby">Hobby</a>
+            <a href="#social">Social</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>&copy;2023, Copyrights By Yoan</p>
+    </footer>
+</body>
+</html>
